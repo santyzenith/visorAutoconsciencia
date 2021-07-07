@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+        <title>Autoconsciencia</title>
+   
+        <link rel="stylesheet" type="text/css" href="recursos/css/normalize.css" />
+   
+        <!-- <link rel="stylesheet" type="text/css" href="recursos/css/mobile.css" media="screen and (max-width: 450px)" />
+   
+        <link rel="stylesheet" type="text/css" href="recursos/css/tablet.css" media="screen and (min-width: 450px) and (max-width: 900px)" />
+   
+        <link rel="stylesheet" type="text/css" href="recursos/css/desktop.css" media="screen and (min-width: 900px)" /> -->
+
+        <link rel="stylesheet" type="text/css" href="recursos/css/auto_desktop.css" media="all" />
+   
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet"> <!--Fuente para el documento-->
+   
+        <link rel="stylesheet" type="text/css" href="recursos/iconos/css/all.min.css" /> <!--iconos de font awesome-->
+    </head>
+
+    <body>
+        <p class="titulo">Visor de monitorización y autoconsciencia para sistemas IoT</p>
+
+        <div class="container-general">
+
+            <div class="barra_lateral">
+
+                <div class="sujeto-container">
+                    <p class="titulo__menu">Sujeto</p>
+                    <div class="combobox-container">
+                        <select class="combo" name="select">
+                            <option value="Seleccione" selected>Seleccione</option>
+                            <option value="Opcion_1" >Sujeto 1</option>
+                            <option value="Opción_2">Sujeto 2</option>
+                            <option value="Opción_3">Sujeto 3</option>
+                            <option value="Opción_3">Sujeto 3</option>
+                            <option value="Opción_3">Sujeto 3</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="objetos-container">
+                    <p class="titulo__menu">Objetos</p>
+                    
+                    <div class="arbol-container">
+                        <nav>
+                            <ul class="menu">
+                                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-minus"></i>Casa</a></li>
+
+                                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-minus"></i>Casa</a>
+                                <!-- submenu -->
+                                    <ul class="submenu">
+                                        
+                                        <li class="menu__item"> <a href="#" class="menu__link">Dormitorio</a></li>
+                                        <li class="menu__item"> <a href="#" class="menu__link">Cocina</a></li>
+                                        <li class="menu__item"> <a href="#" class="menu__link">Baño</a></li>
+                                    </ul>
+                                <!-- fin submenu -->
+                                </li>
+
+                                <li class="menu__item"><a href="#" class="menu__link"><i class="fas fa-minus"></i>Casa</a>
+                                    <!-- submenu -->
+                                        <ul class="submenu">
+                                            
+                                            <li class="menu__item"> <a href="#" class="menu__link">Dormitorio</a></li>
+                                            <li class="menu__item"> <a href="#" class="menu__link">Cocina</a></li>
+                                            <li class="menu__item"> <a href="#" class="menu__link">Baño</a></li>
+                                        </ul>
+                                    <!-- fin submenu -->
+                                </li>
+                      
+                            </ul>
+            
+                        </nav>
+                    </div>
+
+                </div>
+
+                <div class="aspectos-container">
+                    <p class="titulo__menu">Aspectos</p>
+                    <div class="lista-container">
+                        <nav class="menu__container">
+                            <ul class="menu">
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades1</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades2</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades3</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades4</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades5</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades6</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades1</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades2</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades3</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades4</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades5</a></li>
+                                <li class="menu__item"> <a href="#" class="menu__link">Propiedades6</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <div class="metricas-container">
+                    <p class="titulo__menu">Métricas</p>
+                    <div class="combobox-container">
+                        <select class="combo" name="select">
+                            <option value="Seleccione" selected>Seleccione</option>
+                            <option value="Opcion_1" >Métrica 1</option>
+                            <option value="Opción_2">Métrica 2</option>
+                            <option value="Opción_3">Métrica 3</option>
+                            <option value="Opción_3">Métrica 3</option>
+                            <option value="Opción_3">Métrica 3</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-informacion">
+
+                <div class = "container-botones">
+                    <div class="botones">
+                        <a href="#" class="boton"><i class="fas fa-satellite"></i>En tiempo real</a>
+                        <a href="#" class="boton" id="btn-form"><i class="fas fa-history"></i>Histórico</a>
+                        <a href="#" class="boton" id="btn-form"><i class="fas fa-magic"></i>Predicción</a>
+                    </div>
+
+                    <div class="radio-botones">
+                        <a class="rad-boton" href="index.html"><i class="fas fa-circle white"></i>Monitorización</a>
+                        <a class="rad-boton" href="#"><i class="fas fa-circle blue"></i>Autoconsciencia</a>
+                    </div>
+
+                </div>
+
+                <div class="ocultar" id="fechas">
+                    <form action="#"></form>
+                        <label for="desde">Desde: </label>
+                        <input type="text" required id="desde" name="des">
+                        <label for="hasta">Hasta: </label>
+                        <input type="text" required id="hasta" name="hast">
+                        <input class="boton-form" type="submit" value="Mostrar">
+                    </form> 
+                </div>
+
+                <div class="tabla-container">
+                    <table id="tabla-informacion">
+                        <thead>
+                            <tr>
+                                <th>Datos</th>
+                                <th>Metadatos</th>
+                                <th>Fecha</th>
+                                <th>Sensores</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                            <tr>
+                                <td>Datos</td>
+                                <td>Metas</td>
+                                <td>Julio</td>
+                                <td>Sensor1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="grafico-container">
+                    <p class="titulo-grafico">Gráfico</p>
+
+                    <div class="grafico"> 
+                        <canvas id="myChart"></canvas>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <script src="recursos/javascript/menu.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script>
+            
+            const labels = [
+                'January',
+                'February',
+                'March',
+                'April',
+                'May',
+                'June',
+                ];
+
+            const data = {
+                labels: labels,
+                datasets: [{
+                    label: 'My First dataset',
+                    backgroundColor: 'rgb(255, 99, 132)',
+                    borderColor: 'rgb(255, 99, 132)',
+                    data: [0, 10, 5, 2, 20, 30, 45],
+                }]
+                };
+
+            const config = {
+                type: 'line',
+                data,
+                options: {}
+                };
+
+            var myChart = new Chart(
+                document.getElementById('myChart'),
+                config
+                );
+        </script>
+    </body>
+
+</html>
